@@ -56,11 +56,12 @@ class LinkedList:
         currentPosition = 0
 
         while True:
-            previousNode = currentNode
+
             if currentPosition == position:
                 previousNode.next = newNode
                 newNode.next = currentNode
                 break
+            previousNode = currentNode
             # advancing to the next node
             currentNode = currentNode.next
             # advance the current position
